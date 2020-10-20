@@ -5,22 +5,18 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-
 name: Build OpenWrt
 
 on:
   repository_dispatch:
-  release:
-    types: published
-  push:
-    branches:
-      - master
-    paths:
-      - '.config'
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 #  schedule:
 #    - cron: 0 8 * * 5
-  watch:
-    types: started
 
 env:
   REPO_URL: https://github.com/zllyxcben/openwrt
