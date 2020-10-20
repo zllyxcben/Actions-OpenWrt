@@ -19,7 +19,7 @@ on:
 #    - cron: 0 8 * * 5
 
 env:
-  REPO_URL: https://github.com/zllyxcben/openwrt
+  REPO_URL: https://github.com/zllyxcben/Lienol
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
